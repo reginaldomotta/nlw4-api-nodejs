@@ -1,18 +1,12 @@
 import { MigrationInterface, QueryRunner, Table } from "typeorm";
 
-export class CreateUsers1614115191129 implements MigrationInterface {
+export class CreateSurveys1614168754350 implements MigrationInterface {
 
-    /**
-     * funcao para criar a tabela
-     */
     public async up(queryRunner: QueryRunner): Promise<void> {
-        await queryRunner.createTable(
 
-            /**
-             * cria a tabela confome as definições
-             */
+        await queryRunner.createTable(
             new Table({
-                name: "users",
+                name: "surveys",
                 columns: [
                     {
                         name: "id",
@@ -20,11 +14,11 @@ export class CreateUsers1614115191129 implements MigrationInterface {
                         isPrimary: true
                     },
                     {
-                        name: "name",
+                        name: "title",
                         type: "varchar"
                     },
                     {
-                        name: "email",
+                        name: "description",
                         type: "varchar"
                     },
                     {
@@ -35,13 +29,13 @@ export class CreateUsers1614115191129 implements MigrationInterface {
                 ]
             })
         )
+
     }
 
-    /**
-     * funcao para deletar a tabela no banco
-     */
     public async down(queryRunner: QueryRunner): Promise<void> {
-        await queryRunner.dropTable("users");
+
+        await queryRunner.dropTable("surveys");
+
     }
 
 }

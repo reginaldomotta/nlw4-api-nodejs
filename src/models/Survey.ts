@@ -2,23 +2,23 @@ import { Column, CreateDateColumn, Entity, PrimaryColumn } from "typeorm";
 import { v4 as uuid } from 'uuid';
 
 /**
- * modelo da entidade usuario
+ * modelo da entidade pesquisa
  */
-@Entity("users")
+@Entity("surveys")
 
 /**
- * classe usuario
+ * classe pesquisa
  */
-class User {
+class Survey {
 
     @PrimaryColumn()
     readonly id: string;
 
     @Column()
-    name: string;
+    title: string;
 
     @Column()
-    email: string;
+    description: string;
 
     @CreateDateColumn()
     created_at: Date;
@@ -34,4 +34,4 @@ class User {
 
 }
 
-export { User }
+export { Survey }
