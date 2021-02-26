@@ -26,7 +26,18 @@ obs: alguns códigos estão comentados para meu entendimento durante as aulas.
 1. Refatoração do Controller do usuário para utilização de repositório;
 2. Criação do repositório do usuário;
 3. Criação da Migration das pesquisas (surveys);
-4. Criação do repositório das pesquisas;
-5. Criação do Controller das pesquisas;
-6. Instrução sobre testes automatizados e utilização do framework JEST com banco de dados - teste;
-7. Criação e execução dos teste de integração do usuário e pesquisas; 
+4. Criação da entidade (model) da pesquisa
+5. Criação do repositório das pesquisas;
+6. Criação do Controller das pesquisas;
+7. Instrução sobre testes automatizados e utilização do framework JEST com banco de dados - teste;
+8. Criação e execução dos teste de integração do usuário e pesquisas; 
+
+## Aula 04
+
+1. Criação da migration surveysUser;
+2. Criação da entidade (model) SurveysUser;
+3. Criação do repositório SurveysUserRepository;
+4. Criação do Controller para envio do email;
+5. Atualização das Rotas incluindo o envio do email;
+6. Criação do serviço SendMail com a biblioteca nodemailer;
+7. Utilização do serviço ETHEREAL como fake SMTP;

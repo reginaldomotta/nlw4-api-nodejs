@@ -1,21 +1,19 @@
 import { Router } from 'express';
 import { UserControler } from './controllers/UserController';
 import { SurveysController } from './controllers/SurveysController'
+import { SendMailController } from './controllers/SendMailController';
 
-/**
- * criacao das rotas para acesso ao banco de dados
- */
+
 const router = Router();
 
 const userController = new UserControler();
 const surveysController = new SurveysController();
+const sendMailController = new SendMailController();
 
-
-/**
- * rota para criação do usuario
- */
 router.post("/users", userController.create);
 router.post("/surveys", surveysController.create);
 router.get("/surveys", surveysController.show);
+router.post("/sendMail", sendMailController.execute);
+
 
 export { router };
