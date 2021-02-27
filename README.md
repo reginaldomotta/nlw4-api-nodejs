@@ -41,3 +41,12 @@ obs: alguns códigos estão comentados para meu entendimento durante as aulas.
 5. Atualização das Rotas incluindo o envio do email;
 6. Criação do serviço SendMail com a biblioteca nodemailer;
 7. Utilização do serviço ETHEREAL como fake SMTP;
+
+## Aula 05
+
+1. Refatoração do SendMail;
+2. Criação do controle de respostas do usuário;
+3. Validação do usuário;
+4. Criação do método para alterar a nota da pesquisa;
+5. Criação do controle para calcular NPS;
+6. Utilização da biblioteca Yup Validation para validação;

@@ -4,9 +4,9 @@ import { User } from "../models/User";
 
 
 @EntityRepository(User)
-class UsersRepositoy extends Repository<User> { }
+class UsersRepository extends Repository<User> { }
 
 
 
 
-export { UsersRepositoy }
+export { UsersRepository }
